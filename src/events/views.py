@@ -20,7 +20,7 @@ def event(request, id):
 
 
 def index(request):
-    event_list = Event.objects.all().order_by('-date')
+    event_list = Event.objects.all().order_by("-date")
     paginator = Paginator(event_list, 3)  # Show 3 contacts per page.
 
     page_number = request.GET.get("page")
