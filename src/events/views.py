@@ -3,14 +3,6 @@ from .models import Event
 from django.core.paginator import Paginator
 
 
-# def index(request):
-#     events = Event.objects.all()
-#     context = {
-#         "events": events,
-#     }
-#     return render(request, "events/index.html", context)
-
-
 def event(request, id):
     event = get_object_or_404(Event, id=id)
     context = {
