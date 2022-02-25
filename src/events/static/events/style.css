@@ -1,3 +1,43 @@
+
 body{
-    /* background-color: black; */
+    max-width: 100%;
+    text-align: center;
+    font-family: 'Arimo', sans-serif;
+}
+
+.navbar{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+}
+
+.navbar ul li{
+    display: inline-block;
+    
+}
+
+.navbar ul li a{
+    margin-right: 2em;
+    text-decoration: none;
+    color: #37474F;
+}
+
+.navbar img{
+    width: 160px; 
+    height: 25px;
+}
+
+
+.navbar li :hover {
+    
+    border-bottom: #F2888E 2px solid;
+}
+
+.pagination .step-links a{
+    color: #37474F;
+    font-size: 20px;
+    font-weight: 500;
+
 }
