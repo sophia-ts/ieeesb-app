@@ -10,7 +10,9 @@
 <body>
     {% load static %}
     <div class="navbar">
-        <img src="{% static 'images/LogoLetters.png' %}">
+        <a href="http://localhost:8000/events/">
+            <img src="{% static 'images/LogoLetters.png' %}">
+        </a>
         <ul>
             <li><a href="http://localhost:8000/events/">Αρχική</a></li>
             <li><a href="http://localhost:8000/events/">Εκδηλώσεις</a></li>
@@ -29,10 +31,6 @@
             {% if page_obj.has_previous %}
                 <a href="?page={{ page_obj.previous_page_number }} " style="padding-right: 10px;">Προηγούμενο</a>
             {% endif %}
-        
-            <!-- <span class="current">
-                Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
-            </span> -->
         
             {% if page_obj.has_next %}
                 <a href="?page={{ page_obj.next_page_number }}">Επόμενο</a>

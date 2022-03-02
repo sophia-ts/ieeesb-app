@@ -120,6 +120,8 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 
+LOCAL_URL = "localhost:8000/"
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
