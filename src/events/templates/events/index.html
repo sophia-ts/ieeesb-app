@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/events/style.css">
-    <title>Landpage</title>
+    <link rel="stylesheet" href="{% static 'events/style.css' %}">
+    <link rel="shortcut icon" href="{%  static 'favicon.ico' %}">
+    <title>IEEE Ionian SB</title>
 </head>
 <body>
-    {% load static %}
+    
     <div class="navbar">
         <a href="http://localhost:8000/events/">
             <img src="{% static 'images/LogoLetters.png' %}">
