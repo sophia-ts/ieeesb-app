@@ -41,3 +41,10 @@ body{
     font-weight: 500;
 
 }
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;   
+}
+.banner h1{color: aqua;}
