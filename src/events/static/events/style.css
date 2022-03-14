@@ -44,7 +44,34 @@ body{
 
 .banner {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;   
+    align-items:center;
+    justify-content: space-evenly;
+    text-align: left;   
 }
-.banner h1{color: aqua;}
+
+.banner h1{
+    color:#406590;
+    font-family: Roboto Mono;
+    font-style: Bold;
+    font-size: 48px;
+    line-height: 63px;
+    line-height: 100%;
+    text-align: Left;
+    Vertical-align: Top;
+}
+
+.banner p{ 
+    position: absolute;
+    width: 488px;
+    height: 30px;
+    left: 208px;
+    top: 413px;
+    
+    color:#37474F;
+    font-family: Poppins;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 30px;
+    line-height: 111%;
+    text-align: Left;
+    vertical-align: Top;}
