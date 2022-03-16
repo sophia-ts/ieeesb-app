@@ -49,7 +49,27 @@ body{
     text-align: left;   
 }
 
-.banner h1{
+.bannerText {
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    text-align: left; 
+    
+
+}
+
+.bannerText h4{
+    color:#37474F;
+    font-family: Poppins;
+    font-style: Medium; 
+    font-size: 18px;
+    line-height: 30px;
+    line-height: 111%;
+    text-align: Left;
+    vertical-align: Top;
+}
+
+.bannerText h1{
     color:#406590;
     font-family: Roboto Mono;
     font-style: Bold;
@@ -57,21 +77,5 @@ body{
     line-height: 63px;
     line-height: 100%;
     text-align: Left;
-    Vertical-align: Top;
+    vertical-align: Top;
 }
-
-.banner p{ 
-    position: absolute;
-    width: 488px;
-    height: 30px;
-    left: 208px;
-    top: 413px;
-    
-    color:#37474F;
-    font-family: Poppins;
-    font-style: Medium;
-    font-size: 18px;
-    line-height: 30px;
-    line-height: 111%;
-    text-align: Left;
-    vertical-align: Top;}
