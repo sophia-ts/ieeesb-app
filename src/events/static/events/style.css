@@ -61,21 +61,29 @@ body{
 .bannerText h4{
     color:#37474F;
     font-family: Poppins;
-    font-style: Medium; 
     font-size: 18px;
-    line-height: 30px;
+
     line-height: 111%;
     text-align: Left;
-    vertical-align: Top;
 }
 
 .bannerText h1{
     color:#406590;
     font-family: Roboto Mono;
-    font-style: Bold;
     font-size: 48px;
-    line-height: 63px;
     line-height: 100%;
     text-align: Left;
-    vertical-align: Top;
+    
+}
+
+.join{
+    font-family: Poppins;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 30;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #F2888E ;
+    border-radius:15px;
 }
