@@ -46,34 +46,28 @@ body{
     display: flex;
     align-items:center;
     justify-content: space-evenly;
-    text-align: left;   
+    text-align: left;
+       
 }
 
-.bannerText {
-    display: flex;
-    align-items:center;
-    justify-content: space-evenly;
-    text-align: left; 
-    
 
-}
-
-.bannerText h4{
-    color:#37474F;
-    font-family: Poppins;
-    font-size: 18px;
-
-    line-height: 111%;
-    text-align: Left;
-}
-
-.bannerText h1{
+.Welcome h1{
     color:#406590;
     font-family: Roboto Mono;
     font-size: 48px;
     line-height: 100%;
     text-align: Left;
     
+}
+
+
+.takePart h4{
+    color:#37474F;
+    font-family: Poppins;
+    font-size: 18px;
+    line-height: 111%;
+    text-align: Left;
+    font-weight: 100;
 }
 
 .join{

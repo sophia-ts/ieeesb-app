@@ -1,3 +1,13 @@
+<!--
+Documentation[
+ /Changes in this commit/ 
+    fixed the positioning of the Welcome txt in the banner(line45).
+ /ToDo/
+    place the buttom at the correct position.
+ /notes/
+    When the list with the events is made, the button will need to be repaired.]
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,15 +43,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
         
         <!--texts-->
-        <div class="bannerText">
+        <div class="Welcome">
             <h1>Καλωσορίσατε<br> στην ομάδα μας!</h1>
-            <h4 style="font-weight: 100;">Λάβε μέρος στην ερχόμενη εκδήλωση μας.</h4>
+            <div class="takePart">
+                <h4>Λάβε μέρος στην ερχόμενη εκδήλωση μας.</h4>
+            </div>
         </div>
-
         <!--button-->
-        <button class="join">Δήλωσε συμμετοχή</button> 
-        <img src="{%static 'images/BannerProfile.png' %}">
+        <button class="join">Δήλωσε συμμετοχή</button>  
         
+        <!--logo-->
+        <img src="{%static 'images/BannerProfile.png' %}">
     </div>
     
     
