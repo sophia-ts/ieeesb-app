@@ -10,7 +10,8 @@
     <title>IEEE Ionian SB</title>
 </head>
 <body>
-    
+    {% load static %}
+
     <div class="navbar">
         <a href="http://localhost:8000/events/">
             <img src="{% static 'images/LogoLetters.png' %}">
@@ -24,7 +25,12 @@
     
     
     {% for event in page_obj %}
-    <a href="{{ event.id }}/">{{ event }}</a>
+    <div class="event-preview">
+        <a href="{{ event.id }}/">{{ event.title }}</a> <br>
+        <img src="/media/{{event.image}}"> <br>
+        <p>{{ event.date }}</p>
+        <button id="event-button" onclick="location.href='{{ event.id }}'">Μάθε περισσότερα!</button>
+    </div>
     <br>
     {% endfor %}
     
@@ -43,4 +49,3 @@
 
 </body>
 </html>
-
