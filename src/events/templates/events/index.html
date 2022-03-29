@@ -23,9 +23,10 @@
         </ul>
     </div>
     
-    
-    {% for event in page_obj %}
-    <div class="event-preview">
+    <h2>Προσεχώς</h2>
+
+    {% for event in all_events.page_upcomming_obj %}
+    <div class="event-preview-upcomming">
         <a href="{{ event.id }}/">{{ event.title }}</a> <br>
         <img src="/media/{{event.image}}"> <br>
         <p>{{ event.date }}</p>
@@ -36,12 +37,36 @@
     
     <div class="pagination">
         <span class="step-links">
-            {% if page_obj.has_previous %}
-                <a href="?page={{ page_obj.previous_page_number }} " style="padding-right: 10px;">Προηγούμενο</a>
+            {% if all_events.page_upcomming_obj.has_previous %}
+                <a href="?page_upcomming={{ all_events.page_upcomming_obj.previous_page_number }} " style="padding-right: 10px;">Προηγούμενο</a>
             {% endif %}
         
-            {% if page_obj.has_next %}
-                <a href="?page={{ page_obj.next_page_number }}">Επόμενο</a>
+            {% if all_events.page_upcomming_obj.has_next %}
+                <a href="?page_upcomming={{ all_events.page_upcomming_obj.next_page_number }}">Επόμενο</a>
+                
+            {% endif %}
+        </span>
+    </div>
+
+    <h2>Περασμένες</h2>
+    {% for event in all_events.page_past_obj %}
+    <div class="event-preview-past">
+        <a href="{{ event.id }}/">{{ event.title }}</a> <br>
+        <img src="/media/{{event.image}}"> <br>
+        <p>{{ event.date }}</p>
+        <button id="event-button" onclick="location.href='{{ event.id }}'">Μάθε περισσότερα!</button>
+    </div>
+    <br>
+    {% endfor %}
+    
+    <div class="pagination">
+        <span class="step-links">
+            {% if all_events.page_past_obj.has_previous %}
+                <a href="?page_past={{ all_events.page_past_obj.previous_page_number }} " style="padding-right: 10px;">Προηγούμενο</a>
+            {% endif %}
+        
+            {% if all_events.page_past_obj.has_next %}
+                <a href="?page_past={{ all_events.page_past_obj.next_page_number }}">Επόμενο</a>
                 
             {% endif %}
         </span>
