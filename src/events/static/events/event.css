@@ -1,0 +1,26 @@
+body{
+    margin: 0 ;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background-color: white;
+    max-width: 100%;
+    font-family: 'Arimo', sans-serif;
+
+}
+
+.title{
+    text-align: center;
+}
+
+.banner_img {
+    text-align: center;
+}
+
+.banner_img img{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
